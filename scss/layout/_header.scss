@@ -1,0 +1,254 @@
+@use "../global" as g;
+
+/*!
+layout > header
+------------------------------
+*/
+.header {
+  height: auto;
+  padding: 0 0 0 20rem;
+  background: var(--bg-header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  @include g.mq() {
+    padding: 0 0 0 70rem;
+  }
+}
+
+.header-logo img {
+  width: 156rem;
+  height: 36rem;
+  @include g.mq() {
+    width: 300rem;
+    height: 48rem;
+  }
+}
+
+.menu {
+  border: none;
+  background-color: inherit;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  background: var(--bg-gradient-blue);
+  // position: relative;
+  @include g.mq() {
+    display: block;
+    position: static;
+    width: auto;
+    height: auto;
+    // background-color: inherit;
+    background: transparent;
+  }
+}
+
+.menu::backdrop {
+  display: none;
+}
+
+.menu[open] {
+  display: block;
+}
+
+.menu-head {
+  display: flex;
+  justify-content: space-between;
+  @include g.mq() {
+    display: none;
+  }
+}
+
+.menu-head-logo {
+  width: 156rem;
+  height: 36rem;
+  transform: translate(20rem, 14rem);
+}
+
+.menu-nav {
+  padding: 32rem 0;
+  width: 100%;
+  @include g.mq() {
+    width: auto;
+    left: 47%;
+    // transform: translate(0, -50%);
+  }
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+  padding: 0 20rem;
+  @include g.mq() {
+    flex-direction: row;
+    gap: 32rem;
+  }
+}
+
+.menu-item {
+  white-space: nowrap;
+  color: var(--color-white);
+  text-align: left;
+}
+
+.menu-item-en,
+.menu-item-ja {
+  color: var(--color-white);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.menu-item-en {
+  font-family: var(--font-en);
+  font-size: 24rem;
+  @include g.mq() {
+    display: none;
+  }
+}
+
+.menu-item-ja {
+  font-size: 14rem;
+  font-weight: 500;
+  margin-left: 8rem;
+  font-weight: bold;
+  @include g.mq() {
+    font-size: 16rem;
+    margin-left: 0;
+  }
+}
+
+.menu-item a {
+  display: block;
+  padding: 4rem 0;
+}
+
+.entry-button.entry-button--header a {
+  border: 1px solid var(--color-white);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.entry-button.entry-button--header {
+  @include g.mq() {
+    display: none;
+  }
+}
+// header-nav
+.header-nav {
+  display: flex;
+}
+
+.header-menu-button,
+.menu-close-button {
+  width: 64rem;
+  height: 64rem;
+}
+
+.header-menu-button,
+.menu-close-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  background-color: var(--bg-base);
+  @include g.mq() {
+    display: none;
+  }
+}
+
+.header-menu-button img,
+.menu-close-button img {
+  width: 20rem;
+  height: 14rem;
+}
+
+.header-menu-button span,
+.entry-link-en,
+.menu-close-button span {
+  font-family: var(--font-en);
+  font-size: 12rem;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.header-entry-link {
+  width: 64rem;
+  height: 64rem;
+  @include g.mq() {
+    width: auto;
+    height: auto;
+  }
+}
+
+.header-entry-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-gradient-blue);
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  @include g.mq() {
+    width: fit-content;
+    height: auto;
+    padding: 38rem 86rem 32rem 24rem;
+    text-align: left;
+  }
+}
+
+.header-entry-box::after {
+  display: none;
+  @include g.mq() {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 24rem;
+    height: 24rem;
+    top: 50%;
+    right: 24rem;
+    transform: translateY(-50%);
+    background-image: url("../img/top/entry-arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.entry-link-en,
+.entry-link-ja {
+  color: var(--color-white);
+}
+
+.entry-link-en {
+  @include g.mq() {
+    font-size: 20rem;
+    letter-spacing: 0.04em;
+    display: flex;
+    gap: 38rem;
+  }
+}
+
+.entry-link-ja {
+  font-size: 10rem;
+  font-weight: bold;
+  line-height: 1;
+  @include g.mq() {
+    font-size: 12rem;
+    letter-spacing: 0.025em;
+  }
+}

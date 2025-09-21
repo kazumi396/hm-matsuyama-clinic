@@ -1,0 +1,152 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-greeting
+------------------------------
+*/
+
+.greeting {
+  padding: 48rem 20rem 120rem 0;
+  position: relative;
+  @include g.mq() {
+    padding: 96rem 84rem 240rem 0;
+    margin-right: 0;
+    overflow: hidden;
+  }
+}
+
+.greeting::after {
+  content: "";
+  display: block;
+  width: 380rem;
+  height: 204rem;
+  top: 55%;
+  right: 0;
+  background-image: url("../img/top/greeting-background-text.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  z-index: 1;
+  @include g.mq() {
+    width: 940rem;
+    height: 332rem;
+    top: 32%;
+    left: 35%;
+  }
+}
+
+.grreting-image {
+  width: 282rem;
+  height: 373rem;
+  aspect-ratio: 282 / 373;
+  @include g.mq() {
+    width: 533rem;
+    height: 705rem;
+    aspect-ratio: 533 / 705;
+  }
+}
+
+.greeting-container {
+  margin-top: 48rem;
+  padding: 0 0 0 20rem;
+  position: relative;
+  @include g.mq() {
+    margin-top: -628rem;
+    padding: 0 20% 0 45.9%;
+  }
+}
+
+.greeting-container::after {
+  content: "";
+  display: block;
+  width: 132rem;
+  height: 200rem;
+  bottom: -50rem;
+  right: -20rem;
+  background-image: url("../img/top/greeting-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  position: absolute;
+  z-index: 1;
+  @include g.mq() {
+    width: 300rem;
+    height: 300rem;
+    aspect-ratio: 1 /1;
+    bottom: -132rem;
+    right: 0;
+  }
+}
+
+.greeting-textGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 32rem;
+}
+
+.greeting-catchCopy {
+  margin-top: 32rem;
+  font-size: 32rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  @include g.mq() {
+    font-size: 40rem;
+    letter-spacing: 0.045em;
+    margin-top: 56rem;
+  }
+}
+
+.greeting-catchCopy span {
+  display: block;
+}
+
+.greeting-br-sp {
+  @include g.mq() {
+    display: none;
+  }
+}
+
+.greeting-br-pc {
+  display: none;
+  @include g.mq() {
+    display: block;
+  }
+}
+
+.greeting-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+  position: relative;
+  z-index: 2;
+}
+
+.greeting-text p {
+  font-size: 16rem;
+  font-weight: 500;
+  line-height: 2.2;
+  letter-spacing: 0.05em;
+}
+
+.greeting-text span {
+  display: block;
+}
+
+.greeting-button-wrapper {
+  margin-top: 32rem;
+  @include g.mq() {
+    margin-top: 56rem;
+  }
+}
+
+.greeting-button {
+  font-family: var(--font-jp);
+  font-weight: bold;
+  line-height: 1.7;
+  @include g.mq() {
+    padding: 17rem 31rem;
+    font-size: 16rem;
+    gap: 32rem;
+  }
+}

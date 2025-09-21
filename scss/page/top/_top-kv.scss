@@ -1,0 +1,35 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-kv
+------------------------------
+*/
+.top-kv {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 76 / 120;
+  position: relative;
+  @include g.mq() {
+    aspect-ratio: 7288 / 160;
+  }
+}
+
+.top-kv::after {
+  content: "";
+  width: 356.8rem;
+  height: 180.7rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -31%);
+  background-image: url("../img/top/fv-copy-sp.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  @include g.mq() {
+    background-image: url("../img/top/fv-copy-pc.png");
+    width: 664.2rem;
+    height: 268.8rem;
+    top: 40%;
+  }
+}

@@ -1,0 +1,33 @@
+@use "../global" as g;
+
+/*!
+component > button
+------------------------------
+*/
+.c-button {
+  margin-inline: auto;
+  display: inline-flex;
+  gap: 16rem;
+  align-items: center;
+  width: fit-content;
+  padding: 16rem 24rem 14rem 24rem;
+  border: 1px solid var(--color-font-base);
+  border-radius: 100vh;
+  font-family: var(--font-en);
+  font-weight: 600;
+  font-size: 14rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  // scale: 1;
+  transition: all 0.3s;
+}
+
+.c-button:hover {
+  scale: 1.05;
+}
+
+.c-button img {
+  width: 7rem;
+  height: 12rem;
+}

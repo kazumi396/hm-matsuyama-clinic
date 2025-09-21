@@ -1,0 +1,141 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-interview
+------------------------------
+*/
+.interview-body {
+  margin: -40rem 20rem 0 20rem;
+  background-color: var(--bg-base);
+  position: relative;
+  z-index: 1;
+  @include g.mq() {
+    margin: -80rem 70rem 0 70rem;
+  }
+}
+
+.interview-body::after {
+  position: absolute;
+  content: "";
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  height: 204rem;
+  top: 45%;
+  left: 0;
+  background-image: url("../img/top/interview-bg-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  @include g.mq() {
+    width: 1440rem;
+    height: 524rem;
+    top: 20%;
+    left: -1%;
+  }
+}
+
+.interview-inner {
+  padding: 80rem 0;
+  @include g.mq() {
+    padding: 120rem 0;
+  }
+}
+
+.interview-title-group {
+  margin-inline: auto;
+}
+
+.interview-container {
+  margin-top: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 44rem;
+  @include g.mq() {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.interview-item {
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+  @include g.mq() {
+    width: 40.31%;
+  }
+}
+
+.interview-item:nth-child(2) {
+  @include g.mq() {
+    padding-top: 56rem;
+  }
+}
+
+.interview-image {
+  position: relative;
+}
+
+.interview-text {
+  position: absolute;
+  left: 16rem;
+  bottom: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4rem;
+  @include g.mq() {
+    gap: 8rem;
+    left: 25rem;
+    bottom: 22rem;
+  }
+}
+
+.interview-text span {
+  display: inline-block;
+  background-color: var(--color-white);
+  padding: 3rem 8rem;
+  font-size: 20rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  @include g.mq() {
+    font-size: 22rem;
+  }
+}
+
+.interview-button {
+  text-align: center;
+  scale: 1;
+  transition: all 0.3s;
+}
+
+.interview-button:hover {
+  scale: 1.05;
+}
+
+.interview-button a {
+  margin-inline: auto;
+  display: inline-flex;
+  gap: 32rem;
+  align-items: center;
+  width: fit-content;
+  padding: 18rem 32rem;
+  border-radius: 100vh;
+  background: var(--bg-gradient-light-blue);
+  font-size: 14rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  position: relative;
+  @include g.mq() {
+    font-size: 16rem;
+  }
+}
+
+.interview-button img {
+  width: 7rem;
+  height: 12rem;
+}
+
+.interview-button--green a {
+  background: var(--bg-gradient-light-green);
+}

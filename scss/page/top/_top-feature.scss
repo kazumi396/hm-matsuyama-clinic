@@ -1,0 +1,138 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-feature
+------------------------------
+*/
+.feature {
+  padding: 120rem 0;
+  background: var(--bg-feature);
+  position: relative;
+  @include g.mq() {
+    padding: 120rem 0 160rem 0;
+    margin: 0 70rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.feature:after {
+  position: absolute;
+  content: "";
+  width: 308rem;
+  height: 301rem;
+  top: 0;
+  right: 0;
+  background-image: url("../img/top/feature-image-sp.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include g.mq() {
+    width: 745rem;
+    height: 598rem;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background-image: url("../img/top/feature-image-pc.png");
+  }
+}
+
+.feature-inner {
+  @include g.mq() {
+    padding: 0 100rem;
+  }
+}
+
+.feature-head {
+  margin: 0 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 32rem;
+  position: relative;
+  z-index: 1;
+  @include g.mq() {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+.feature-message {
+  font-size: 16rem;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.05em;
+  @include g.mq() {
+    width: 66.45%;
+  }
+}
+
+.feature-list {
+  margin: 40rem 14.5rem 0 14.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+  @include g.mq() {
+    margin: 70rem 0 0 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.feature-item {
+  position: relative;
+}
+
+.feature-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 352 / 280;
+  @include g.mq() {
+    aspect-ratio: 352 / 440;
+    object-fit: cover;
+  }
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  padding: 24rem 20rem;
+  position: absolute;
+  bottom: 0;
+  @include g.mq() {
+    padding: 32rem 32rem;
+  }
+}
+
+.feature-number,
+.feature-title,
+.feature-text {
+  color: var(--color-white);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.feature-number,
+.feature-text {
+  font-family: var(--font-en);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.feature-number {
+  font-size: 18rem;
+}
+
+.feature-title {
+  font-size: 22rem;
+  font-weight: bold;
+}
+
+.feature-text {
+  font-size: 14rem;
+}
