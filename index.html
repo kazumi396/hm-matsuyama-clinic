@@ -30,13 +30,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
 
     <!-- css -->
-    <!-- splide css -->
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- js -->
     <script src="js/main.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -111,7 +108,7 @@
           <img src="img/top/menu-icon.svg" width="20" height="15" alt="" decoding="async" />
           <span>menu</span>
         </button>
-        <a class="header-entry-link" href="entry.html">
+        <a class="header-entry-link" href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
           <div class="header-entry-box">
             <span class="entry-link-en">entry</span>
             <span class="entry-link-ja">エントリー</span>
@@ -130,47 +127,45 @@
 
       <section class="news" id="#news">
         <div class="news-container">
-          <div class="c-title-group">
-            <h2 class="c-title">news</h2>
-            <p class="c-title-sub">新着情報</p>
+          <div class="c-title-group news-title">
+            <p class="c-title">news</p>
+            <h2 class="c-title-sub">新着情報</h2>
           </div>
           <div class="news-item-container">
-            <section class="splide" role="group" aria-label="Splideの基本的なHTML">
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide">
-                    <img src="img/top/news-image01.png" width="514" height="342" alt="器具を扱う手元の写真" decoding="async" />
-                    <div class="news-text-box">
-                      <div class="news-head">
-                        <span class="news-title">採用情報</span>
-                        <time class="news-date" datetime="2022-11-05">2022.11.05</time>
-                      </div>
-                      <p class="news-description">採用採用説明会開催について</p>
+            <div class="news-list-wrapper">
+              <ul class="news-list">
+                <li class="news-item">
+                  <img src="img/top/news-image01.png" width="514" height="342" alt="器具を扱う手元の写真" decoding="async" />
+                  <div class="news-text-box">
+                    <div class="news-head">
+                      <span class="news-title">採用情報</span>
+                      <time class="news-date" datetime="2022-11-05">2022.11.05</time>
                     </div>
-                  </li>
-                  <li class="splide__slide">
-                    <img src="img/top/news-image02.png" width="514" height="342" alt="3人のスタッフが談笑中" decoding="async" />
-                    <div class="news-text-box">
-                      <div class="news-head">
-                        <span class="news-title">採用情報</span>
-                        <time class="news-date" datetime="2022-11-05">2022.11.05</time>
-                      </div>
-                      <p class="news-description">松山クリニック開催 無料の新卒セミナーのご案内</p>
+                    <p class="news-description">採用採用説明会開催について</p>
+                  </div>
+                </li>
+                <li class="news-item">
+                  <img src="img/top/news-image02.png" width="514" height="342" alt="3人のスタッフが談笑中" decoding="async" />
+                  <div class="news-text-box">
+                    <div class="news-head">
+                      <span class="news-title">採用情報</span>
+                      <time class="news-date" datetime="2022-11-05">2022.11.05</time>
                     </div>
-                  </li>
-                  <li class="splide__slide">
-                    <img src="img/top/news-image03.png" width="514" height="342" alt="看護師が処置をしている様子" decoding="async" />
-                    <div class="news-text-box">
-                      <div class="news-head">
-                        <span class="news-title">採用情報</span>
-                        <time class="news-date" datetime="2022-11-05">2022.11.05</time>
-                      </div>
-                      <p class="news-description">採用採用説明会開催について</p>
+                    <p class="news-description">松山クリニック開催 無料の新卒セミナーのご案内</p>
+                  </div>
+                </li>
+                <li class="news-item">
+                  <img src="img/top/news-image03.png" width="514" height="342" alt="看護師が処置をしている様子" decoding="async" />
+                  <div class="news-text-box">
+                    <div class="news-head">
+                      <span class="news-title">採用情報</span>
+                      <time class="news-date" datetime="2022-11-05">2022.11.05</time>
                     </div>
-                  </li>
-                </ul>
-              </div>
-            </section>
+                    <p class="news-description">採用採用説明会開催について</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <div class="news-button-wrapper">
               <a class="c-button news-button" href="news.html">more<img src="img/top/icon.svg" width="7" height="12" alt="" decoding="async" /></a>
             </div>
@@ -182,8 +177,8 @@
         <img class="grreting-image" src="img/top/greeting-image-container.webp" width="1066" height="1410" alt="笑顔で働いている女性" decoding="async" />
         <div class="greeting-container">
           <div class="c-title-group">
-            <h2 class="c-title">greeting</h2>
-            <p class="c-title-sub">ご挨拶</p>
+            <p class="c-title">greeting</p>
+            <h2 class="c-title-sub">ご挨拶</h2>
           </div>
           <div class="greeting-textGroup">
             <p class="greeting-catchCopy">
@@ -208,8 +203,8 @@
         <div class="feature-inner">
           <div class="feature-head">
             <div class="c-title-group c-title-group--type2">
-              <h2 class="c-title c-title--type2">feature</h2>
-              <p class="c-title-sub c-title-sub--type2">３つの特徴</p>
+              <p class="c-title c-title--type2">feature</p>
+              <h2 class="c-title-sub c-title-sub--type2">３つの特徴</h2>
             </div>
             <p class="feature-message">最新の設備と公平な評価制度、そしてフラットな組織文化が、あなたの可能性を最大限に引き出します。共に学び、高め合える環境で、医療のプロフェッショナルとして輝きましょう。</p>
           </div>
@@ -261,8 +256,8 @@
         <div class="interview-body">
           <div class="interview-inner">
             <div class="c-title-group c-title-group--type3 interview-title-group">
-              <h2 class="c-title c-title--type3">interview</h2>
-              <p class="c-title-sub c-title-sub--type3">インタビュー</p>
+              <p class="c-title c-title--type3">interview</p>
+              <h2 class="c-title-sub c-title-sub--type3">インタビュー</h2>
             </div>
             <div class="interview-container">
               <div class="interview-item">
@@ -305,8 +300,8 @@
         <img class="entry-image" src="img/top/entry-image.jpg" width="380" height="240" alt="笑顔で仕事をする3名の様子" decoding="async" />
         <div class="entry-textBox">
           <div class="c-title-group c-title-group--type2">
-            <h2 class="c-title c-title--type2">entry</h2>
-            <p class="c-title-sub c-title-sub--type2">エントリー</p>
+            <p class="c-title c-title--type2">entry</p>
+            <h2 class="c-title-sub c-title-sub--type2">エントリー</h2>
           </div>
           <div class="entry-text">
             <p>あなたの一歩が、多くの笑顔につながります。</p>
@@ -314,7 +309,7 @@
             <p>ぜひ、あなたの想いをお聞かせください。</p>
           </div>
           <div class="entry-button">
-            <a href="entry.html">
+            <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
               entry
               <span class="entry-ja">エントリー</span>
               <span class="entry-icon"></span>

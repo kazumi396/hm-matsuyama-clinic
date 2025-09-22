@@ -90,25 +90,3 @@ const menu = () => {
 };
 
 menu();
-
-/**
- * ファーストビュー　splide
- */
-document.addEventListener("DOMContentLoaded", function () {
-  new Splide(".splide", {
-    type: "loop",
-    perPage: 3,
-    breakpoints: {
-      768: {
-        perPage: 1,
-      },
-    },
-    autoplay: false,
-    interval: 3000,
-    pauseOnHover: true,
-    arrows: false,
-    pagination: false,
-    gap: "1rem",
-    padding: { left: "1rem", right: "1rem" },
-  }).mount();
-});
