@@ -150,7 +150,8 @@ button {
   font-size: 100%;
   border-radius: 0;
   border: none;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   -webkit-appearance: none;
   background-color: inherit;
 }
@@ -272,6 +273,7 @@ component > button
   display: inline-flex;
   gap: 16rem;
   align-items: center;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 16rem 24rem 14rem 24rem;
   border: 1px solid var(--color-font-base);
@@ -306,6 +308,7 @@ component > title
 .c-title-group--type2,
 .c-title-group--type3 {
   display: block;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -603,6 +606,7 @@ layout > header
 }
 @media screen and (min-width: 768px) {
   .header-entry-box {
+    width: -moz-fit-content;
     width: fit-content;
     height: auto;
     padding: 38rem 86rem 32rem 24rem;
@@ -742,6 +746,7 @@ layout > footer
   display: inline-flex;
   gap: 16rem;
   align-items: center;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 14rem 24rem;
   border-radius: 100vh;
@@ -783,6 +788,17 @@ layout > footer
   font-family: var(--font-en);
   font-size: 12rem;
   letter-spacing: 0.05em;
+}
+
+.l-footer-disclaimer {
+  font-size: 11rem;
+  letter-spacing: 0.05em;
+}
+
+@media screen and (min-width: 768px) {
+  .l-footer-disclaimer-br {
+    display: none;
+  }
 }
 
 /*!
@@ -892,7 +908,8 @@ page > top > top-news
   width: 257rem;
   height: 171rem;
   aspect-ratio: 257/171;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (min-width: 768px) {
   .splide__slide img {
@@ -1227,7 +1244,8 @@ page > top > top-feature
 @media screen and (min-width: 768px) {
   .feature-item img {
     aspect-ratio: 352/440;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -1405,6 +1423,7 @@ page > top > top-interview
   display: inline-flex;
   gap: 32rem;
   align-items: center;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 18rem 32rem;
   border-radius: 100vh;
@@ -1499,6 +1518,7 @@ page > top > top-entry
   margin-inline: auto;
   display: inline-flex;
   align-items: baseline;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 16rem 32rem;
   border-radius: 100vh;

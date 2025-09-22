@@ -118,3 +118,14 @@ layout > footer
   font-size: 12rem;
   letter-spacing: 0.05em;
 }
+
+.l-footer-disclaimer {
+  font-size: 11rem;
+  letter-spacing: 0.05em;
+}
+
+.l-footer-disclaimer-br {
+  @include g.mq() {
+    display: none;
+  }
+}
