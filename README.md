@@ -1,4 +1,4 @@
-# Web サイト「MATSUYAMA CLINIC」（架空採用サイト）
+# MATSUYAMA CLINIC（架空採用サイト）
 
 ## 概要
 
