@@ -11,7 +11,7 @@ Figma のデザインカンプをもとに、レスポンシブ対応の静的 W
 
 ## 公開 URL
 
-🔗 [https://kpeacemkm.sakura.ne.jp/portfolio/matsuyama_clinic/](https://kpeacemkm.sakura.ne.jp/portfolio/matsuyama_clinic/)
+🔗 [デモページを見る][https://kpeacemkm.sakura.ne.jp/portfolio/matsuyama_clinic/](https://kpeacemkm.sakura.ne.jp/portfolio/matsuyama_clinic/)
 
 ## 使用技術
 
